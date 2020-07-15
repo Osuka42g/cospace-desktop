@@ -1,0 +1,29 @@
+{
+  "name": "Cospace",
+  "version": "1.0.0",
+  "description": "A Nextiva app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [],
+  "author": "Oscar Mendoza",
+  "license": "",
+  "devDependencies": {
+    "electron": "^9.0.5",
+    "electron-builder": "^22.7.0"
+  },
+  "build": {
+    "appId": "com.nextiva",
+    "mac": {
+      "category": "com.nextiva.cospace"
+    },
+    "directories": {
+      "buildResources": "./resources"
+    }
+  },
+  "postinstall": "electron-builder install-app-deps"
+}
